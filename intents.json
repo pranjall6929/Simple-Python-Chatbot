@@ -1,22 +1,100 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["My pleasure", "You're Welcome"],
-         "context": [""]
-        },
-        {"tag": "query",
-         "patterns": ["What is Simplilearn?"],
-         "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform "],
-         "context": [""]
-        } 
-    ]}
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey there", "Good morning", "Good evening", "What's up?"],
+      "responses": ["Hello! How can I assist you today?", "Hi there, welcome back!", "Hey! Need help with anything?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later", "Talk to you soon"],
+      "responses": ["Goodbye!", "Take care and come back soon!", "Have a great day ahead!"],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Much appreciated", "Thanks a lot"],
+      "responses": ["You're welcome!", "Glad I could help!", "Anytime!"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["I'm not sure I understood that. Could you try rephrasing?", "Sorry, I didn’t get that. Can you elaborate?"],
+      "context": [""]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like today?", "Will it rain tomorrow?", "Do I need an umbrella?", "Weather update please"],
+      "responses": ["Checking the latest weather... one moment!", "Let me get the forecast for your area."],
+      "context": [""]
+    },
+    {
+      "tag": "news",
+      "patterns": ["What's the latest news?", "Give me today's news", "Any breaking news?", "Tell me current affairs"],
+      "responses": ["Here are today’s top headlines.", "Fetching the latest news for you now."],
+      "context": [""]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "Something funny please"],
+      "responses": ["Why don't programmers like nature? Too many bugs.", "Parallel lines have so much in common. It’s a shame they’ll never meet."],
+      "context": [""]
+    },
+    {
+      "tag": "course_info",
+      "patterns": ["Tell me about your courses", "What courses do you offer?", "List available programs", "Do you offer certifications?"],
+      "responses": ["We offer programs in AI, Data Science, Cybersecurity, Cloud, and more. Would you like details for a specific field?"],
+      "context": [""]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": ["How do I apply?", "What's the admission process?", "Can I enroll online?", "Enrollment steps please"],
+      "responses": ["To enroll, go to our website, choose a course, fill out the form, and submit the required documents."],
+      "context": [""]
+    },
+    {
+      "tag": "fees_structure",
+      "patterns": ["What is the fee?", "Tell me about the course fees", "How much do courses cost?", "Is there any EMI option?"],
+      "responses": ["Course fees vary based on the program. Please specify which course you're interested in.", "Yes, we offer EMI and scholarship options."],
+      "context": [""]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": ["Do you offer scholarships?", "Any discounts available?", "Is financial aid available?", "Can I get a scholarship?"],
+      "responses": ["Yes, we offer merit-based and need-based scholarships. Would you like help applying?"],
+      "context": [""]
+    },
+    {
+      "tag": "technical_issue",
+      "patterns": ["I can't login", "Website is not working", "Having issues with the portal", "App crashed", "Error loading page"],
+      "responses": ["Sorry to hear that. Can you describe the issue in more detail?", "Try clearing your cache or restarting the app. If the issue persists, contact support."],
+      "context": [""]
+    },
+    {
+      "tag": "reset_password",
+      "patterns": ["I forgot my password", "Reset my password", "Can't log into my account", "Recover login"],
+      "responses": ["Click on ‘Forgot Password’ on the login page. You’ll receive a reset link via email.", "Reset instructions have been sent to your registered email."],
+      "context": [""]
+    },
+    {
+      "tag": "support_contact",
+      "patterns": ["Contact support", "Need help", "Where can I get assistance?", "Support team details"],
+      "responses": ["You can contact support at support@eduplatform.com or call 1800-123-456.", "We're here to help! Reach out via the Help section of our website."],
+      "context": [""]
+    },
+    {
+      "tag": "certification_query",
+      "patterns": ["Do I get a certificate?", "Is there certification after the course?", "Will I receive a diploma?", "How valid is your certificate?"],
+      "responses": ["Yes, you will receive an industry-recognized certificate upon course completion.", "Our certifications are recognized by top companies and universities."],
+      "context": [""]
+    },
+    {
+      "tag": "job_assistance",
+      "patterns": ["Do you offer job support?", "Is placement available?", "Career services?", "Do I get help finding a job?"],
+      "responses": ["We offer job assistance including resume reviews, mock interviews, and job alerts.", "Yes, career support is part of our premium plans."],
+      "context": [""]
+    }
+  ]
+}
